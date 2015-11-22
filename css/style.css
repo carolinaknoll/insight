@@ -22,6 +22,13 @@ a {
     margin: 0 auto;
 }
 
+.container:after,
+.blocks:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .header,
 .footer {
     background: #15181F url(../images/bg-texture.jpg) repeat;
@@ -151,6 +158,81 @@ a {
 .btn-blue {
     background-color: #068FD5;
     box-shadow: 0 4px 0 #046B9F;
+}
+
+
+
+.middle {
+	background: #fff;
+	padding-top: 80px;
+}
+
+.blocks {
+	margin-bottom: 75px
+}
+
+.blocks .block {
+    float: left;
+    width: 351px;
+    margin-left: 43px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #d9dbdf;
+    position: relative;
+}
+
+.blocks .block:first-child {
+    margin-left: 0;
+}
+
+.blocks .block:after,
+.blocks .block:before {
+    content:'';
+    height: 3px;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #e1e2e5;
+    border-top: 0;
+    position: absolute;
+}
+
+.blocks .block:after {
+    bottom: -4px;
+    left: 3px;
+    right: 3px;
+}
+
+.blocks .block:before {
+    bottom: -7px;
+    left: 6px;
+    right: 6px;
+}
+
+.blocks img {
+    vertical-align: top;
+}
+
+.blocks .image {
+    margin-bottom: 13px;  
+}
+
+.blocks .photo {
+    float: left;
+}
+
+.blocks .text {
+    float: right;
+    width: 258px;
+}
+
+.blocks .phrase {
+    color: #454e5c;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.blocks .info {
+    color: #8e959c;
+    font-size: 14px;
 }
 
 .footer {
