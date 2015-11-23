@@ -15,6 +15,11 @@ body {
 
 a {
     text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -236,8 +241,7 @@ a {
 }
 
 .news {
-    border-top: 2px solid #e7e7e7;
-    border-bottom: 2px solid #e7e7e7;
+    border-top: 2px solid #e7e7e7;  
     padding: 31px 0;
     margin-bottom: 30px;
 }
@@ -277,9 +281,8 @@ a {
     margin: 4px 0 0;
 }
 
-
-
 .featured {
+    border-top: 2px solid #e7e7e7;
     padding: 26px 0;
     margin-bottom: 34px;
 }
@@ -300,6 +303,10 @@ a {
     opacity: 1;
 }
 
+.news,
+.featured {
+     margin-bottom: 100px;   
+}
 
 
 .footer {
