@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+    font: 16px 'Open Sans', Arial, Helvetica, sans-serif; /* 16px */
     color: #55606E;
 }
 
@@ -38,6 +38,8 @@ a:hover {
 .footer {
     background: #15181F url(../images/bg-texture.jpg) repeat;
     color: #fff;
+    
+    max-width: 100%;
 }
 
 .middle {
@@ -48,11 +50,16 @@ a:hover {
     background: #333 url(../images/bg-hero.jpg) no-repeat 50% 50%;
     background-size: cover;
     height: 465px;
+    
+    max-width: 100%;
+    max-height: auto;
 }
 
 .logo {
     float: left;
     margin: 19px 17px 0 0;
+  
+    max-width: 100%;
 }
 
 .slogan {
@@ -61,6 +68,23 @@ a:hover {
     font: italic 16px "Times new Roman", Times, Georgia, serif;
     color: rgba(255, 255, 255, .35);
 }
+
+  .header-menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header-menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+  }
+
+/*
+ *
+ * Nav
+ *
+ */
 
 .nav {
     float: right;
@@ -116,6 +140,12 @@ a:hover {
     height: 25px;
 }
 
+/*
+ *
+ * Hero
+ *
+ */
+
 .hero {
     background: #333 url(../images/bg-hero.jpg) no-repeat 50% 50%;
     background-size: cover;
@@ -143,6 +173,12 @@ a:hover {
     font-weight: 700;
 }
 
+/*
+ *
+ * Hero Buttons
+ *
+ */
+
 .btn {
     display: inline-block;
     border-radius: 4px;
@@ -165,7 +201,11 @@ a:hover {
     box-shadow: 0 4px 0 #046B9F;
 }
 
-
+/*
+ *
+ * Hero Blocks
+ *
+ */
 
 .middle {
 	background: #fff;
@@ -240,6 +280,12 @@ a:hover {
     font-size: 14px;
 }
 
+/*
+ *
+ * News
+ *
+ */
+
 .news {
     border-top: 2px solid #e7e7e7;  
     padding: 31px 0;
@@ -281,6 +327,12 @@ a:hover {
     margin: 4px 0 0;
 }
 
+/*
+ *
+ * Featured
+ *
+ */
+
 .featured {
     border-top: 2px solid #e7e7e7;
     padding: 26px 0;
@@ -308,6 +360,11 @@ a:hover {
      margin-bottom: 100px;   
 }
 
+/*
+ *
+ * Footer
+ *
+ */
 
 .footer {
     padding: 36px 0;
@@ -445,3 +502,25 @@ a:hover {
     color: #8E959C;
     margin-left: 8px;
 }
+
+/*
+ *
+ * Responsive Layout
+ *
+ */
+
+@media screen and (min-width: 611px) {
+     .header-menu {
+         visibility: hidden;
+     }
+    
+    body {
+        font-size: 16px;
+}
+    
+@media screen and (min-width: 900px) {
+    
+    
+}
+    
+@media screen and (min-width: 1160px) {

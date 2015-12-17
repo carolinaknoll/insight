@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Insight</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/reset.css">
@@ -18,7 +19,14 @@
         <div class="container">
             <div class="logo"><img src="images/logo.png" height="25" width="81" alt=""></div>
             <div class="slogan">your nice slogan</div>
-            <nav>
+            
+            <a id="menu" class="header-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+              </svg>
+            </a>
+            
+            <nav id="drawer" class="nav">
                 <ul class="nav">
                     <li class="how-it-works"><a href="#">How it works</a></li>
                     <li class="sign-up"><a href="#">Sign up</a></li>
@@ -28,6 +36,7 @@
         </div>
     </header>
 
+   <main>
     <div class="hero">
         <div class="container">
             <h1>Don't ignore your dreams</h1>
@@ -196,5 +205,23 @@
             </div>
         </div>
     </footer>
+ </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
 
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+    
 </body>
