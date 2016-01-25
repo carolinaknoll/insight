@@ -151,7 +151,9 @@ a:hover {
 .hero {
     background: #333 url(../images/bg-hero.jpg) no-repeat 50% 50%;
     background-size: cover;
-    height: 465px;
+    position: relative;
+    min-height: 465px;
+    width: 100%; 
     color: #fff;
     text-align: center;
     padding-top: 31px;
