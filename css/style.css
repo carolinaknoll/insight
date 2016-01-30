@@ -596,7 +596,20 @@ img:hover {
     
     .hero {
         font-size: 0.8em;
-        line-height: 2.5em;        
+        line-height: 2.5em;
+    }
+    
+    .hero p {
+        line-height: 1.2;
+        padding: 0px 5px;
+    }
+    
+    .btn {
+        font-size: 1.3em;
+        line-height: 40px; 
+        padding: 0 45px;
+        margin: 0 11px;
+        margin-top: 20px;     
     }
     
      .news, .block {
@@ -631,8 +644,7 @@ img:hover {
 }
 
 @media screen and (min-width: 690px) {
-
-     .header-menu {
+    .header-menu {
          display: none;
      }
     
