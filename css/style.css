@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font: 16px 'Open Sans', Arial, Helvetica, sans-serif; /* 16px */
+    font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
     line-height: 1.2em;
     color: #55606E;
 }
@@ -51,8 +51,7 @@ a:hover {
 .hero {
     background: #333 url(../images/bg-hero.jpg) no-repeat 50% 50%;
     background-size: cover;
-    height: 465px;
-    
+    height: 465px;   
     max-width: 100%;
     max-height: auto;
 }
@@ -81,6 +80,10 @@ a:hover {
     width: 32px;
     fill: #E0E0E0;
   }
+
+p span {
+    font-weight: bold;
+}
 
 /*
  *
@@ -152,17 +155,18 @@ a:hover {
     background: #333 url(../images/bg-hero.jpg) no-repeat 50% 50%;
     background-size: cover;
     position: relative;
-    min-height: 465px;
     width: 100%; 
+    min-height: 465px;
     color: #fff;
     text-align: center;
     padding-top: 31px;
 }
 
 .hero h1 {
-    font-size: 52px;
+    font-size: 3em;
     font-weight: bold;
     margin: 0 0 30px;
+    padding-top: 50px;
 }
 
 .hero p {
@@ -170,7 +174,7 @@ a:hover {
     line-height: 36px;
     font-weight: 600;
     max-width: 715px;
-    margin: 0 auto 51px;
+    margin: 0 auto 0px;
 }
 
 .hero p strong {
@@ -193,6 +197,7 @@ a:hover {
     line-height: 50px;
     padding: 0 55px;
     margin: 0 11px;
+    margin-top: 50px;
 }
 
 .btn-green {
@@ -207,17 +212,39 @@ a:hover {
 
 /*
  *
- * Hero Blocks
+ * Middle and Block section
  *
  */
 
 .middle {
 	background: #fff;
-	padding-top: 80px;
+	padding-top: 30px;
+    
+    background-size: cover;
+    position: relative;
+    width: 100%; 
+    min-height: 500px;
+}
+
+.testimonials-title {
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1;  
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonials-subtitle {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1;  
+    margin: auto;
+    text-align: center;
 }
 
 .blocks {
-	margin-bottom: 75px
+	margin-bottom: 50px;
 }
 
 .blocks .block {
@@ -286,20 +313,46 @@ a:hover {
 
 /*
  *
+ * Advice
+ *
+ */
+
+.advice {
+    border-top: 2px solid #e7e7e7;
+}
+
+.advice-paragraph {
+    margin: 30px 0px;
+    font-size: 1em;
+}
+
+/*
+ *
  * News
  *
  */
 
 .news {
     border-top: 2px solid #e7e7e7;  
-    padding: 31px 0;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 0px; /* 30px */
+    
+    background-size: cover;
+    position: relative;
+    width: 100%; 
+    min-height: 50px;
+}
+
+.news-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
 }
 
 .news .one {
     float: left;
-    width: 352px;
-    margin-left: 42px;
+    width: 342px;
+    margin-left: 20px;
 }
 
 .news .one:first-child {
