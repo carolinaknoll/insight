@@ -270,6 +270,10 @@ img:hover {
     border-radius: 4px;
     border: 1px solid #d9dbdf;
     position: relative;
+    
+    max-width: 351px;
+    min-height: 50px;
+    width: 100%;
 }
 
 .blocks .block:first-child {
@@ -339,6 +343,7 @@ img:hover {
 .advice-paragraph {
     margin: 30px 0px;
     font-size: 1em;
+    padding: 0px 20px;
 }
 
 /*
@@ -530,9 +535,17 @@ img:hover {
     .block {
         display: flex;
         flex-wrap: wrap;
-        max-width: 60%;
+        max-width:50%;
         height: auto;
+        padding: 20px;
+        margin: 10px !important;
     }
+    .text {
+        max-width: 50%; /* 70 */
+        margin-right:100px; /* 35 */
+        margin-left: -40px;
+    }
+    
     .news .text {
         order: 1;
         max-width: 80%;
@@ -543,11 +556,11 @@ img:hover {
     }
     .block img {
         width: 100%;
-        max-width: 60%;
+        max-width: 100%;
         height: auto;
     }
     footer .column,
-    .soc {
+    .social-icons {
         padding: 20px;
         display: block;
     }
@@ -565,7 +578,10 @@ img:hover {
     
 @media screen and (min-width: 900px) {
     
-    
 }
     
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1200px) {
+    .advice-paragraph {
+        padding: 0px;
+    }
+}
