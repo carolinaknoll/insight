@@ -323,7 +323,7 @@ p span { font-weight: bold; }
     font-size: 1.1em;
 }
 
-.news-blocks  { float: none; } 
+.news-blocks { float: none; } 
 
 .news .one {
     float: left;
@@ -449,8 +449,8 @@ p span { font-weight: bold; }
     
     .blocks .text {
         width: 100%;
-        max-width: 50%; /* 70 */
-        margin-right:40px; /* 35 */
+        max-width: 50%;
+        margin-right:40px;
         margin-left: -40px;
     }
     

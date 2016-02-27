@@ -40,7 +40,7 @@
 
    <main>
     <div class="hero">
-        <div class="container">
+        <div class="container" data-sr="wait 0.1s, then enter and hustle 100px over 1s">
             <h1>Don't ignore your dreams.</h1>
             <p>Your dreams and your actions <strong>define you.</strong></p>
             <p>Take the steps to make your life special and memorable.</p>
@@ -50,9 +50,9 @@
     </div>
     
     <div class="container">
-        <p class="testimonials-title"><span>Inspire yourself:</span> read some of our testimonials.</p>
+        <p class="testimonials-title" data-sr="wait 0.1s, then enter and hustle 100px over 1s"><span>Inspire yourself:</span> read some of our testimonials.</p>
         <div class="blocks">
-            <div class="block">
+            <div class="block" data-sr="wait 0.3s and then ease-in-out 100px">
                 <div class="image">
                     <img src="images/photo1.jpg" height="180" width="319" alt="girl in a skate park"></div>
 
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="block">
+            <div class="block" data-sr="wait 0.4s and then ease-in-out 100px">
                 <div class="image">
                     <img src="images/photo2.jpg" height="180" width="319" alt="sign with City Loft written"></div>
 
@@ -80,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="block">
+            <div class="block" data-sr="wait 0.5s and then ease-in-out 100px">
                 <div class="image">
                     <img src="images/photo3.jpg" height="180" width="319" alt="street with people walking casually"></div>
 
@@ -97,7 +97,7 @@
             
         <div class="advice">
             <div class="container">
-                <p class="advice-paragraph">Following your dreams sometimes can be tough. But accomplishing your dreams will spark even bigger dreams, and you will inspire others to follow their own dreams, even if they know nothing about you. Even if your dreams fail, <span>you’ll feel proud you gave it your all to accomplish them.</span></p>
+                <p class="advice-paragraph" data-sr="wait 0.6s and then ease-in-out 50px">Following your dreams sometimes can be tough. But accomplishing your dreams will spark even bigger dreams, and you will inspire others to follow their own dreams, even if they know nothing about you. Even if your dreams fail, <span>you’ll feel proud you gave it your all to accomplish them.</span></p>
             </div>
         </div>
             
@@ -106,7 +106,7 @@
                 <p class="news-title">Ready to <span>push yourself?</span> See how to start making your dreams come true below.</p>
 
                 <div class="news-blocks">
-                    <div class="one">
+                    <div class="one" data-sr="wait 0.5s and then ease-in-out 100px">
                         <div class="img">
                             <a href="#"><img src="images/news1.jpg" height="89" width="89" alt="steve jobs pointing at you"></a>
                         </div>
@@ -117,7 +117,7 @@
 
                     </div>
 
-                    <div class="one">
+                    <div class="one" data-sr="wait 0.7s and then ease-in-out 100px">
                         <div class="img">
                             <a href="#"><img src="images/news2.jpg" height="89" width="89" alt="group of people having fun"></a>
                         </div>
@@ -127,7 +127,7 @@
                         </div>
                     </div>
 
-                    <div class="one">
+                    <div class="one" data-sr="wait 0.9s and then ease-in-out 100px">
                         <div class="img">
                             <a href="#"><img src="images/news3.jpg" height="89" width="89" alt="building with townhouses"></a>
                         </div>
@@ -232,5 +232,9 @@
       });
     </script>
     
+    <script src="js/scrollReveal.min.js"></script>
+    <script>
+        window.sr = scrollReveal();
+    </script>
 </body>
 </html>
